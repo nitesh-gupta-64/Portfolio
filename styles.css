@@ -458,6 +458,46 @@ nav ul li a:hover {
   border: none;
   outline: none;
 }
+
+.btnProject {
+  background-color: #e84949;
+  width: fit-content;
+  color: white;
+  padding: 0.8rem 2.3rem;
+  box-shadow: 5px 5px 7px 0px #0000003f;
+  font-size: 18px;
+  cursor: pointer;
+  transition: all 0.5s;
+  font-weight: 500;
+  border: solid 3px transparent;
+  position: relative;
+  z-index: 1;
+  text-decoration: none;
+}
+
+.btnProject::before {
+  content: "";
+  position: absolute;
+  background-color: #fff;
+  top: 0px;
+  left: 0;
+  right: 0;
+  bottom: 0px;
+  z-index: -1;
+  transform: scaleX(0);
+  transform-origin: left;
+  transition: all 0.8s;
+}
+
+.btnProject:hover::before {
+  transform: scaleX(1);
+}
+
+.btnProject:hover {
+  border: solid 3px #e84949;
+  color: black;
+}
+
 .icon {
   cursor: pointer;
   color: white;
@@ -728,8 +768,6 @@ nav ul li a:hover {
   background-color: #e84949;
   width: 4rem;
   height: 1.8rem;
-  padding-top: 6px;
-  padding-left: 10px;
   color: white;
   box-shadow: 5px 5px 7px 0px #0000003f;
   font-size: 0.6em;
@@ -740,6 +778,9 @@ nav ul li a:hover {
   position: relative;
   z-index: 1;
   text-decoration: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .btn::before {
@@ -1043,13 +1084,32 @@ nav ul li a:hover {
   align-items: center;
 }
 
-.btnGroup .btnProject {
+.btnGroup {
   padding-bottom: 5px;
   padding-right: 6px;
   font-size: 0.5em;
   border: none;
   outline: none;
 }
+
+.btnProject {
+  background-color: #e84949;
+  width: 4rem;
+  height: 1.8rem;
+  color: white;
+  box-shadow: 5px 5px 7px 0px #0000003f;
+  font-size: 1em;
+  cursor: pointer;
+  transition: all 0.5s;
+  font-weight: 300;
+  border: solid 3px transparent;
+  position: relative;
+  z-index: 1;
+  text-decoration: none;
+  border: none;
+  outline: none;
+}
+
 .icon {
   cursor: pointer;
   color: white;
