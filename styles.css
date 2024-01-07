@@ -338,6 +338,11 @@ nav ul li a:hover {
   left: 5%;
 }
 
+#project7 {
+  background-image: url(./Images/projects/Project7.png);
+  right: 5%;
+}
+
 .projectCard {
   width: 80vw;
   height: 40vw;
@@ -998,6 +1003,11 @@ nav ul li a:hover {
 #project6 {
   background-image: url(./Images/projects/Project6.png);
   left: 5%;
+}
+
+#project7 {
+  background-image: url(./Images/projects/Project7.png);
+  right: 5%;
 }
 
 .projectCard {
